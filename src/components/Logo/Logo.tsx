@@ -1,14 +1,20 @@
-import Typography from '@mui/material/Typography/index'
-import logo from '../../assets/adventure-logo-pic.jpg'
+import Typography from '@mui/material/Typography'
+import logo from '../../assets/logo-mountain.png'
+import './Logo.css'
 
 type Props = {}
 const Logo = (props: Props) => {
     return (
         <>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Typography
+                className="logo-img"
+                variant="h6"
+                component="div"
+                sx={{ flexGrow: 1 }}
+            >
                 <img src={logo} alt="" />
+                <Typography className="logo-text">Adventure Begins</Typography>
             </Typography>
-            <Typography>Adventure Begins</Typography>
         </>
     )
 }
