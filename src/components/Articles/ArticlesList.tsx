@@ -9,7 +9,7 @@ console.log(articlesArray)
 function ArticlesList({}: Props) {
     return (
         <>
-            <Grid container>
+            <Grid container sx={{ display: 'flex' }}>
                 {articlesArray.map(
                     ({ id, image, title, description, date, like }) => (
                         <Grid item xs={12} sm={6} lg={4} key={id}>

@@ -1,4 +1,5 @@
 import { Card, CardContent } from '@mui/material'
+import './ArticleListItem.css'
 
 type Props = {
     image: string
@@ -11,8 +12,8 @@ type Props = {
 const ArticleListItem = ({ image, title, description, date, like }: Props) => {
     return (
         <>
-            <Card>
-                <CardContent>
+            <Card className="card">
+                <CardContent className="card-content">
                     <div className="article-image">
                         <img src={image} alt="" />
                     </div>

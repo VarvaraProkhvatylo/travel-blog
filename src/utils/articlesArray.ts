@@ -10,10 +10,10 @@ type Article = {
 export const articlesArray:Article[] = [
     {
         id: 1,
-        image: "",
+        image: "src/assets/Articles/international-travel-tips.png",
         title: "International Travel Tips",
         description: "Planning your first trip abroad? In addition to all the excitement you're feeling, it`s completely natural to feel a bit anxious. These international travel tips should help you feel prepared ...",
-        date: "",
+        date: "23.03.2019",
         like: ""
     },
     {
