@@ -6,3 +6,9 @@ background-color: rgb(193, 115, 14);
 .header-container {
     max-width: 1420px;
 }
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
