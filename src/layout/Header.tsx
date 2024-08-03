@@ -6,7 +6,7 @@ import Menu from '../components/HeaderMenu/HeaderMenu'
 import './Header.css'
 
 type Props = {}
-function Header({}: Props) {
+const Header = (props: Props) => {
     return (
         <AppBar position="static" className="appbar">
             <Container className="header-container">
