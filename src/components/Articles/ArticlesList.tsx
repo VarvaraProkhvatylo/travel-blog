@@ -6,7 +6,7 @@ type Props = {}
 
 console.log(articlesArray)
 
-function ArticlesList({}: Props) {
+const ArticlesList = (props: Props) => {
     return (
         <>
             <Grid container sx={{ display: 'flex' }}>
