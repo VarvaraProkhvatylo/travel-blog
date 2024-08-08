@@ -2,3 +2,16 @@
     height: 500px;
     width: 350px;
 }
+.card-content {
+    height: 500px;
+    width: 350px;
+}
+
+.article-image {
+    display: flex;
+    justify-content: center;
+}
+.article-image img {
+    width: 350px;
+    height: 200px;
+}

@@ -6,6 +6,7 @@ import Menu from '../components/HeaderMenu/HeaderMenu'
 import './Header.css'
 
 type Props = {}
+
 const Header = (props: Props) => {
     return (
         <AppBar position="static" className="appbar">
