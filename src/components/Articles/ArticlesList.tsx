@@ -4,7 +4,7 @@ import { articlesArray } from '../../utils/articlesArray'
 
 type Props = {}
 
-console.log(articlesArray)
+// console.log(articlesArray)
 
 const ArticlesList = (props: Props) => {
     return (

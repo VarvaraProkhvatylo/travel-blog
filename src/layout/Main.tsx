@@ -1,5 +1,6 @@
 import { Container } from '@mui/material'
-import ProductsList from '../components/Articles/ArticlesList'
+import ArticlesList from '../components/Articles/ArticlesList'
+import Slider from '../components/Slider/Slider'
 
 type Props = {}
 
@@ -12,7 +13,8 @@ const Main = (props: Props) => {
                 }}
                 className="main-container"
             >
-                <ProductsList />
+                <Slider />
+                <ArticlesList />
             </Container>
         </>
     )

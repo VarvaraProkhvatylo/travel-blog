@@ -1,0 +1,18 @@
+.swiper-wrapper {
+    max-width: 900px;
+    height: 180px;
+}
+
+.swiper-slide {
+    height: 180px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    height: 150px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+}
