@@ -1,10 +1,10 @@
 import { Container } from '@mui/material'
-import ArticlesList from '../components/Articles/ArticlesList'
-import Slider from '../components/Slider/Slider'
+import ArticlesList from '../../components/Articles/ArticlesList'
+import Slider from '../../components/Slider/Slider'
 
 type Props = {}
 
-const Main = (props: Props) => {
+const Home = (props: Props) => {
     return (
         <>
             <Container
@@ -12,6 +12,7 @@ const Main = (props: Props) => {
                     padding: '30px 0',
                 }}
                 className="main-container"
+                component={'div'}
             >
                 <Slider />
                 <ArticlesList />
@@ -20,4 +21,4 @@ const Main = (props: Props) => {
     )
 }
 
-export default Main
+export default Home
