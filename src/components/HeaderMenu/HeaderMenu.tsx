@@ -16,9 +16,15 @@ const Menu = (tag: Props) => {
     return (
         <>
             <Container className="navigation-menu">
-                <MenuItem to="/bucket-list">Bucket List</MenuItem>
-                <MenuItem to="/travel-tips">Travel Tips</MenuItem>
-                <MenuItem to="/food">Food</MenuItem>
+                <Button color="inherit" className="menu-item">
+                    <MenuItem to="/bucket-list">Bucket List</MenuItem>
+                </Button>
+                <Button color="inherit" className="menu-item">
+                    <MenuItem to="/travel-tips">Travel Tips</MenuItem>
+                </Button>
+                <Button color="inherit" className="menu-item">
+                    <MenuItem to="/food">Food</MenuItem>
+                </Button>
                 <Button color="inherit" className="menu-item">
                     <MenuItem to="/contacts">Contacts</MenuItem>
                 </Button>
