@@ -35,7 +35,7 @@ export const articlesArray:Article[] = [
     {
         id: 4,
         image: "images/fitzroy-hike.jpg",
-        title: "How To Do The Fitz Roy Hike In Patagonia (Laguna De Los Tres)",
+        title: "How To Do The Fitz Roy Hike In Patagonia",
         description: "The famous Patagonia region of Argentina has some amazing hiking trails, but the very best would have to be the day hike to Mount Fitz Roy and ...",
         date: "23.05.2021",
         like: ""

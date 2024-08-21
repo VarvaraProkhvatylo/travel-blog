@@ -9,7 +9,7 @@ type Props = {}
 const ArticlesList = (props: Props) => {
     return (
         <>
-            <Grid container sx={{ display: 'flex' }}>
+            <Grid container>
                 {articlesArray.map(
                     ({ id, image, title, description, date, like }) => (
                         <Grid item xs={12} sm={6} lg={4} key={id}>

@@ -12,7 +12,7 @@ type Props = {
 const ArticleListItem = ({ image, title, description, date, like }: Props) => {
     return (
         <>
-            <Card className="card">
+            <Card className="card" sx={{ marginBottom: '25px' }}>
                 <CardContent className="card-content">
                     <div className="article-image">
                         <img src={image} alt="" />
