@@ -12,6 +12,23 @@
     width: fit-content;
 }
 
+.menu-item a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: white;
+}
+
+.menu-item a:hover {
+    text-decoration: underline;
+}
+
+.menu-item a:focus {
+    background: #0000001e;
+
+}
+
 .search {
     width: 120px;
 }
