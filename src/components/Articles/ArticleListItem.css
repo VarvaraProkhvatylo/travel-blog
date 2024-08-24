@@ -1,5 +1,5 @@
 .card {
-    height: 500px;
+    height: 600px;
     width: 350px;
 }
 .card-content {
@@ -19,12 +19,24 @@
 .article-title {
     font-family: "Playfair Display", serif;
     height: 60px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     font-size: 25px;
     font-style: normal;
 }
 
 .article-description {
+    height: 209px;
+    margin-bottom: 15px;
     font-family: "Lato", sans-serif;
     font-size: 20px;
     font-weight: 400;
+    
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.article-date {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
 }

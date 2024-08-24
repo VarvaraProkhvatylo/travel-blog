@@ -7,6 +7,7 @@ type Props = {
     description: string
     date: string
     like: string
+    category: string
 }
 
 const ArticleListItem = ({ image, title, description, date, like }: Props) => {

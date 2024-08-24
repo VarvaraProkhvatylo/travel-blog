@@ -4,14 +4,22 @@ import { articlesArray } from '../../utils/articlesArray'
 
 type Props = {}
 
-// console.log(articlesArray)
+console.log(articlesArray)
 
 const ArticlesList = (props: Props) => {
     return (
         <>
             <Grid container>
                 {articlesArray.map(
-                    ({ id, image, title, description, date, like }) => (
+                    ({
+                        id,
+                        image,
+                        title,
+                        description,
+                        date,
+                        like,
+                        category,
+                    }) => (
                         <Grid item xs={12} sm={6} lg={4} key={id}>
                             <ArticleListItem
                                 image={image}
@@ -19,6 +27,7 @@ const ArticlesList = (props: Props) => {
                                 description={description}
                                 date={date}
                                 like={like}
+                                category={category}
                             />
                         </Grid>
                     )
