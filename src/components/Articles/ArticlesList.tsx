@@ -24,7 +24,7 @@ const ArticlesList = (props: Props) => {
                             <ArticleListItem
                                 image={image}
                                 title={title}
-                                description={description}
+                                description={description + '...'}
                                 date={date}
                                 like={like}
                                 category={category}

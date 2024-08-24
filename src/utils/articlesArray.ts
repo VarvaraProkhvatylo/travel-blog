@@ -23,7 +23,7 @@ export const articlesArray:Article[] = [
         image: "images/mt-bromo-ban.jpg.webp",
         title: "Mount Bromo Volcano Sunrise In Indonesia ",
         category: "bucket-list",
-        description: "Watching the sunrise at the Mount Bromo volcano in Indonesia is easily one of the most amazing travel experiences in the world. ...",
+        description: "Watching the sunrise at the Mount Bromo volcano in Indonesia is easily one of the most amazing travel experiences in the world.",
         date: "03.10.2019",
         like: ""
     },
@@ -32,7 +32,7 @@ export const articlesArray:Article[] = [
         image: "images/ultimate-food-guide.jpg",
         title: "The Ultimate Food Lover`s Guide to Puglia",
         category: "food",
-        description: "While Rome and Tuscany remain destinations of choice for foodies, some may find the rampant tourism ever-so-slightly disheartening. Described by some as the `rising star` of Southern Italy, Puglia is a haven ...",
+        description: "While Rome and Tuscany remain destinations of choice for foodies, some may find the rampant tourism ever-so-slightly disheartening. Described by some as the `rising star` of Southern Italy, Puglia is a haven",
         date: "13.09.2020",
         like: ""
     },
@@ -41,7 +41,7 @@ export const articlesArray:Article[] = [
         image: "images/fitzroy-hike.jpg",
         title: "How To Do The Fitz Roy Hike In Patagonia",
         category: "bucket-list",
-        description: "The famous Patagonia region of Argentina has some amazing hiking trails, but the very best would have to be the day hike to Mount Fitz Roy and ...",
+        description: "The famous Patagonia region of Argentina has some amazing hiking trails, but the very best would have to be the day hike to Mount Fitz Roy and",
         date: "23.05.2021",
         like: ""
     },
@@ -50,7 +50,7 @@ export const articlesArray:Article[] = [
         image: "images/travel-tips-Europe.jpg",
         title: "Travel Tips for Europe",
         category: "tips",
-        description: "Whenever you are considering a trip to a new place, it's always a good idea to do research before you leave home. With that in mind, you are on the hunt for some good travel tips for Europe, ...",
+        description: "Whenever you are considering a trip to a new place, it's always a good idea to do research before you leave home. With that in mind, you are on the hunt for some good travel tips for Europe, ",
         date: "21.11.2021",
         like: ""
     },
