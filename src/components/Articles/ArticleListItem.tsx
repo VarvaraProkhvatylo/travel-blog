@@ -4,13 +4,21 @@ import './ArticleListItem.css'
 type Props = {
     image: string
     title: string
-    description: string
+    description?: string
     date: string
     like: string
     category: string
+    shortDescription?: string
 }
 
-const ArticleListItem = ({ image, title, description, date, like }: Props) => {
+const ArticleListItem = ({
+    image,
+    title,
+    shortDescription,
+    description,
+    date,
+    like,
+}: Props) => {
     return (
         <>
             <Card className="card" sx={{ marginBottom: '25px' }}>
@@ -19,7 +27,9 @@ const ArticleListItem = ({ image, title, description, date, like }: Props) => {
                         <img src={image} alt="" />
                     </div>
                     <h2 className="article-title">{title}</h2>
-                    <div className="article-description">{description}</div>
+                    <div className="article-description">
+                        {shortDescription}
+                    </div>
                     <div className="article-date">{date}</div>
                     <div className="article-like">{like}</div>
                 </CardContent>

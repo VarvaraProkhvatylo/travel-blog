@@ -15,19 +15,21 @@ const ArticlesList = (props: Props) => {
                         id,
                         image,
                         title,
-                        description,
                         date,
                         like,
                         category,
+                        shortDescription,
+                        description,
                     }) => (
                         <Grid item xs={12} sm={6} lg={4} key={id}>
                             <ArticleListItem
                                 image={image}
                                 title={title}
-                                description={description + '...'}
+                                shortDescription={shortDescription}
                                 date={date}
                                 like={like}
                                 category={category}
+                                description={description}
                             />
                         </Grid>
                     )
