@@ -16,6 +16,7 @@ const ArticleListItem = ({
     title,
     shortDescription,
     description,
+    category,
     date,
     like,
 }: Props) => {
@@ -26,10 +27,16 @@ const ArticleListItem = ({
                     <div className="article-image">
                         <img src={image} alt="" />
                     </div>
-                    <h2 className="article-title">{title}</h2>
+                    <h2
+                        className="article-title"
+                        style={{ textAlign: 'center', alignContent: 'center' }}
+                    >
+                        {title}
+                    </h2>
                     <div className="article-description">
                         {shortDescription}
                     </div>
+                    <div className="category">{category}</div>
                     <div className="article-date">{date}</div>
                     <div className="article-like">{like}</div>
                 </CardContent>
