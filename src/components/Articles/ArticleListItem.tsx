@@ -34,7 +34,7 @@ const ArticleListItem = ({
                         {title}
                     </h2>
                     <div className="article-description">
-                        {shortDescription}
+                        {shortDescription} ...
                     </div>
                     <div className="category">{category}</div>
                     <div className="article-date">{date}</div>
