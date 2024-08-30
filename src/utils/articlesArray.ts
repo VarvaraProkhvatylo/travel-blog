@@ -1,16 +1,15 @@
-type Article = {
+export type Article = {
     id: number
     image: string
     title: string
+    category: string
+    shortDescription: string
     description: string
     date: string
     like: string
-    category: string
-    shortDescription: string
 }
 
 export const articlesArray:Article[] = [
-   
     {
         id: 1,
         image: "images/mt-bromo-ban.jpg.webp",
@@ -102,3 +101,12 @@ export const articlesArray:Article[] = [
         like: ""
     }
 ]
+
+
+export const getArticlesObject = (array:Article[]) => array.reduce(
+    (obj, article) => ({
+        ...obj,
+        [article.category]: article,
+    }),
+    {}
+)

@@ -38,4 +38,5 @@ const ArticlesList = (props: Props) => {
         </>
     )
 }
+
 export default ArticlesList

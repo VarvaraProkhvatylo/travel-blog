@@ -1,36 +1,59 @@
-// import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
-// import Chip from '@mui/material/Chip';
 import Autocomplete from '@mui/material/Autocomplete'
 import TextField from '@mui/material/TextField'
 import { Container } from '@mui/material'
 import './HeaderMenu.css'
 import { NavLink } from 'react-router-dom'
 import MenuItem from './MenuItem'
-import { articlesArray } from '../../utils/articlesArray'
+import {
+    articlesArray,
+    getArticlesObject,
+    Article,
+} from '../../utils/articlesArray'
 
 type Props = {
     tag?: string
-    category?: string
+    // category?: string
     categories?: Array<string>
+    article?: Array<string>
+
+    articlesArray?: {
+        [category: string]: string
+    }
+    articlesObject?: {
+        [category: string]: Article
+    }
+
+    filteredArticles?: any
 }
 const Tags = [{ tag: 'tip' }, { tag: 'airport' }, { tag: 'food' }]
 
-const categories = ['bucket-list', 'food', 'tips']
+// const categories = ['bucket-list', 'food', 'tips']
 
 // const bucket = categories.filter(function (category) {
 //     return category.match('bucket-list')
 // })
-// const tips = categories.filter(function (category) {
-//     return category.match('tips')
+// const tips = articlesArray.filter(function (articlesArray.category) {
+//     return articlesArray.category.match('tips')
 // })
+// console.log(tips)
 // const food = categories.filter(function (category) {
 //     return category.match('food')
 // })
 
-// const category = articlesArray.category
+/// ВИВЕСТИ ВСІ СТАТТІ
+const articlesObject = getArticlesObject(articlesArray)
 
-const Menu = ({ tag }: Props) => {
+console.log(articlesObject)
+
+/// THIS IS WORKING!!!!!
+const filteredArticlesBucket = articlesArray.filter(
+    (article) => article.category.indexOf('bucket-list') !== -1
+)
+
+console.log(filteredArticlesBucket)
+
+const Menu = ({}: Props) => {
     return (
         <>
             <Container className="navigation-menu">
