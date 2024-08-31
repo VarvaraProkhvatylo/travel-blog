@@ -1,16 +1,17 @@
 import { Grid } from '@mui/material'
-import ArticleListItem from './ArticleListItem'
 import { articlesArray } from '../../utils/articlesArray'
+import ArticleListItem from '../../components/Articles/ArticleListItem'
 
-type Props = {}
+type Props = {
+    category: string
+}
 
-// console.log(articlesArray)
-
-const ArticlesList = (props: Props) => {
+const Category = ({ category }: Props) => {
     return (
-        <>
-            <Grid container>
-                {articlesArray.map(
+        <div>
+            {articlesArray
+                .filter((article) => article.category === category)
+                .map(
                     ({
                         id,
                         image,
@@ -34,9 +35,8 @@ const ArticlesList = (props: Props) => {
                         </Grid>
                     )
                 )}
-            </Grid>
-        </>
+        </div>
     )
 }
 
-export default ArticlesList
+export default Category

@@ -36,7 +36,14 @@ const ArticleListItem = ({
                     <div className="article-description">
                         {shortDescription} ...
                     </div>
-                    <div className="category">{category}</div>
+                    <div
+                        className="category"
+                        dangerouslySetInnerHTML={{
+                            __html: category,
+                        }}
+                    >
+                        {category}
+                    </div>
                     <div className="article-date">{date}</div>
                     <div className="article-like">{like}</div>
                 </CardContent>

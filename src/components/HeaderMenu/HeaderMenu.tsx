@@ -3,13 +3,14 @@ import Autocomplete from '@mui/material/Autocomplete'
 import TextField from '@mui/material/TextField'
 import { Container } from '@mui/material'
 import './HeaderMenu.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Route, Routes } from 'react-router-dom'
 import MenuItem from './MenuItem'
 import {
     articlesArray,
     getArticlesObject,
     Article,
 } from '../../utils/articlesArray'
+import Category from '../../pages/Category/Category'
 
 type Props = {
     tag?: string
@@ -41,10 +42,12 @@ const Tags = [{ tag: 'tip' }, { tag: 'airport' }, { tag: 'food' }]
 //     return category.match('food')
 // })
 
-/// ВИВЕСТИ ВСІ СТАТТІ
-const articlesObject = getArticlesObject(articlesArray)
+/// Not Used
+// const articlesObject = getArticlesObject(articlesArray)
+// console.log(articlesObject)
 
-console.log(articlesObject)
+/// ВИВЕСТИ ВСІ СТАТТІ
+console.log(articlesArray)
 
 /// THIS IS WORKING!!!!!
 const filteredArticlesBucket = articlesArray.filter(
@@ -57,18 +60,38 @@ const Menu = ({}: Props) => {
     return (
         <>
             <Container className="navigation-menu">
-                <Button color="inherit" className="menu-item">
-                    <MenuItem to="/bucket-list">Bucket List</MenuItem>
-                </Button>
-                <Button color="inherit" className="menu-item">
-                    <MenuItem to="/travel-tips">Travel Tips</MenuItem>
-                </Button>
-                <Button color="inherit" className="menu-item">
-                    <MenuItem to="/food">Food</MenuItem>
-                </Button>
-                <Button color="inherit" className="menu-item">
-                    <MenuItem to="/contacts">Contacts</MenuItem>
-                </Button>
+                <Routes>
+                    <Route
+                        path="/category/bucket-list"
+                        element={<Category category="bucket-list" />}
+                    >
+                        <Button color="inherit" className="menu-item">
+                            Bucket List
+                        </Button>
+                    </Route>
+                    <Route
+                        path="/category/travel-tips"
+                        element={<Category category="tips" />}
+                    >
+                        <Button color="inherit" className="menu-item">
+                            {/* <MenuItem to="/travel-tips"> */}
+                            Travel Tips
+                            {/* </MenuItem> */}
+                        </Button>
+                    </Route>
+                    <Route
+                        path="/category/food"
+                        element={<Category category="food" />}
+                    ></Route>
+                    <Button color="inherit" className="menu-item">
+                        {/* <MenuItem to="/food"> */}
+                        Food
+                        {/* </MenuItem> */}
+                    </Button>
+                    <Button color="inherit" className="menu-item">
+                        <MenuItem to="/contacts">Contacts</MenuItem>
+                    </Button>
+                </Routes>
                 <Autocomplete
                     className="search"
                     multiple
