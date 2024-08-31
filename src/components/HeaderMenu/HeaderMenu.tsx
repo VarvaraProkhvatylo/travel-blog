@@ -60,38 +60,34 @@ const Menu = ({}: Props) => {
     return (
         <>
             <Container className="navigation-menu">
-                <Routes>
-                    <Route
+                {/* <Routes> */}
+                {/* <Route
                         path="/category/bucket-list"
                         element={<Category category="bucket-list" />}
-                    >
-                        <Button color="inherit" className="menu-item">
-                            Bucket List
-                        </Button>
-                    </Route>
-                    <Route
+                    > */}
+                <Button color="inherit" className="menu-item">
+                    <MenuItem to="/bucket-list">Bucket List</MenuItem>
+                </Button>
+                {/* </Route> */}
+                {/* <Route
                         path="/category/travel-tips"
                         element={<Category category="tips" />}
-                    >
-                        <Button color="inherit" className="menu-item">
-                            {/* <MenuItem to="/travel-tips"> */}
-                            Travel Tips
-                            {/* </MenuItem> */}
-                        </Button>
-                    </Route>
-                    <Route
+                    > */}
+                <Button color="inherit" className="menu-item">
+                    <MenuItem to="/travel-tips">Travel Tips</MenuItem>
+                </Button>
+                {/* </Route> */}
+                {/* <Route
                         path="/category/food"
                         element={<Category category="food" />}
-                    ></Route>
-                    <Button color="inherit" className="menu-item">
-                        {/* <MenuItem to="/food"> */}
-                        Food
-                        {/* </MenuItem> */}
-                    </Button>
-                    <Button color="inherit" className="menu-item">
-                        <MenuItem to="/contacts">Contacts</MenuItem>
-                    </Button>
-                </Routes>
+                    ></Route> */}
+                <Button color="inherit" className="menu-item">
+                    <MenuItem to="/food">Food</MenuItem>
+                </Button>
+                <Button color="inherit" className="menu-item">
+                    <MenuItem to="/contacts">Contacts</MenuItem>
+                </Button>
+                {/* </Routes> */}
                 <Autocomplete
                     className="search"
                     multiple
