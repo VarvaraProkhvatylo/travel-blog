@@ -1,12 +1,10 @@
 import Header from './Header'
 import Footer from './Footer'
-// import Main from './Main'
 import Home from '../pages/Home/Home'
 import Contacts from '../pages/Contacts/Contacts'
 import { StyledEngineProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import { Route, Routes } from 'react-router'
-
 import Category from '../pages/Category/Category'
 
 type Props = {}
