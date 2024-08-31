@@ -8,14 +8,7 @@ type Props = {
 }
 
 const MenuItem = ({ to, children }: Props) => {
-    return (
-        <NavLink
-            to={to}
-            // category={category}
-        >
-            {children}
-        </NavLink>
-    )
+    return <NavLink to={to}>{children}</NavLink>
 }
 
 export default MenuItem
