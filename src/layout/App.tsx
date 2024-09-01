@@ -8,6 +8,7 @@ import { Route, Routes } from 'react-router'
 import Category from '../pages/Category/Category'
 
 type Props = {}
+
 const App = (props: Props) => {
     return (
         <>
