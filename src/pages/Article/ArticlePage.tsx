@@ -26,7 +26,10 @@ const ArticlePage = (props: Props) => {
             <Grid container className="article-page">
                 <Container className="article-content">
                     <div className="image">
-                        <img src={articlesObject[parseInt(id!)].image} />
+                        <img
+                            src={articlesObject[parseInt(id!)].image}
+                            alt="image"
+                        />
                     </div>
                     <div className="info">
                         <div className="category">
