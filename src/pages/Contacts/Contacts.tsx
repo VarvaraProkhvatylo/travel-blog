@@ -1,14 +1,14 @@
-import { Container, Typography } from '@mui/material'
+import { Container } from '@mui/material'
 import './Contacts.css'
 
 type Props = {}
 
-const Contacts = ({}: Props) => {
+const Contacts = (props: Props) => {
     return (
         <>
             <Container component={'div'} className="main-container">
                 <Container className="contact-img">
-                    <img src="images/contact.jpg" />
+                    <img src="images/contact.jpg" alt="image-background" />
                     <div className="contact-text">Feel free to reach out!</div>
                 </Container>
                 <Container className="content-container">
