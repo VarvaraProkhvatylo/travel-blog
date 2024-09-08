@@ -10,7 +10,7 @@ type Props = {
 }
 const Tags = [{ tag: 'tip' }, { tag: 'airport' }, { tag: 'food' }]
 
-const Menu = ({}: Props) => {
+const Menu = (props: Props) => {
     return (
         <>
             <Container className="navigation-menu">

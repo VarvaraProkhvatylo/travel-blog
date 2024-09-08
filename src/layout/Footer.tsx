@@ -12,13 +12,25 @@ const Footer = (props: Props) => {
                 <Container className="footer-main-container">
                     <Container className="footer-media">
                         <a href="https://www.instagram.com/feeriamandriv/">
-                            <img src={instagram} className="media-logo" />
+                            <img
+                                src={instagram}
+                                alt="instagram"
+                                className="media-logo"
+                            />
                         </a>
                         <a href="https://www.facebook.com/feeria.ua">
-                            <img src={facebook} className="media-logo" />
+                            <img
+                                src={facebook}
+                                alt="facebook"
+                                className="media-logo"
+                            />
                         </a>
                         <a href="https://x.com/FMandriv">
-                            <img src={twitter} className="media-logo" />
+                            <img
+                                src={twitter}
+                                alt="twitter"
+                                className="media-logo"
+                            />
                         </a>
                     </Container>
                     <Container className="footer-links-container">
