@@ -36,13 +36,14 @@ const Footer = (props: Props) => {
                     <Container className="footer-links-container">
                         <List className="footer-links-list">
                             <ListItem className="footer-links-list-item">
-                                <a href="">Disclaimer</a>
+                                <a href="https://policies.google.com/privacy?hl=en-US">
+                                    Privacy Policy
+                                </a>
                             </ListItem>
                             <ListItem className="footer-links-list-item">
-                                <a href="">Privacy Policy</a>
-                            </ListItem>
-                            <ListItem className="footer-links-list-item">
-                                <a href="">Terms of Use</a>
+                                <a href="https://policies.google.com/terms?hl=en-US">
+                                    Terms of Use
+                                </a>
                             </ListItem>
                         </List>
                     </Container>
