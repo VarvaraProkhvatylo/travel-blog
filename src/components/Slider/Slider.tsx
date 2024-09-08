@@ -3,7 +3,9 @@ import 'swiper/css'
 import 'swiper/css/thumbs'
 import './Slider.css'
 
-export default () => {
+type Props = {}
+
+const Slider = (props: Props) => {
     return (
         <Swiper
             className="swiper-wrapper"
@@ -29,3 +31,5 @@ export default () => {
         </Swiper>
     )
 }
+
+export default Slider
