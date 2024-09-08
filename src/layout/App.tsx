@@ -6,6 +6,7 @@ import { StyledEngineProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import { Route, Routes } from 'react-router'
 import Category from '../pages/Category/Category'
+import ArticlePage from '../pages/Article/ArticlePage'
 
 type Props = {}
 
@@ -30,6 +31,7 @@ const App = (props: Props) => {
                         element={<Category category="food" />}
                     ></Route>
                     <Route path="/contacts" element={<Contacts />}></Route>
+                    <Route path="/:id" element={<ArticlePage />} />
                 </Routes>
                 <Footer />
             </StyledEngineProvider>

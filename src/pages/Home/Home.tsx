@@ -13,7 +13,6 @@ const Home = (props: Props) => {
                 sx={{
                     padding: '30px 0',
                     backgroundImage: `url(${background})`,
-                    // backgroundRepeat: 'no-repeat',
                 }}
                 className="main-container"
                 component={'div'}

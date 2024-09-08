@@ -34,6 +34,7 @@ const Category = ({ category }: Props) => {
                                     className="category-article"
                                 >
                                     <ArticleListItem
+                                        id={id}
                                         image={image}
                                         title={title}
                                         shortDescription={shortDescription}

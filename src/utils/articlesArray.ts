@@ -106,7 +106,7 @@ export const articlesArray:Article[] = [
 export const getArticlesObject = (array:Article[]) => array.reduce(
     (obj, article) => ({
         ...obj,
-        [article.category]: article,
+        [article.id]: article,
     }),
     {}
 )

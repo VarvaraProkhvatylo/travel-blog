@@ -1,7 +1,9 @@
 import { Card, CardContent } from '@mui/material'
 import './ArticleListItem.css'
+import { Link } from 'react-router-dom'
 
 type Props = {
+    id: number
     image: string
     title: string
     description?: string
@@ -12,6 +14,7 @@ type Props = {
 }
 
 const ArticleListItem = ({
+    id,
     image,
     title,
     shortDescription,
@@ -31,7 +34,7 @@ const ArticleListItem = ({
                         className="article-title"
                         style={{ textAlign: 'center', alignContent: 'center' }}
                     >
-                        {title}
+                        <Link to={`/${id}`}>{title}</Link>
                     </h2>
                     <div className="article-description">
                         {shortDescription} ...
