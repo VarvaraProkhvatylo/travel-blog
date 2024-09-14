@@ -65,11 +65,13 @@ const ArticleListItem = ({
                             {isLiked ? (
                                 <img
                                     src={liked}
+                                    alt=""
                                     style={{ width: '27px', height: '27px' }}
                                 />
                             ) : (
                                 <img
                                     src={like}
+                                    alt=""
                                     style={{ width: '27px', height: '27px' }}
                                 />
                             )}
