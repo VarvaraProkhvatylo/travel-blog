@@ -36,6 +36,12 @@
     text-overflow: ellipsis; 
 }
 
+.category-like {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .article-category {
     width: fit-content;
     background-color: aqua;
@@ -49,4 +55,9 @@
 .article-date {
     font-family: "Lato", sans-serif;
     font-weight: 700;
+}
+
+.article-like {
+    width: 27px;
+    height: 27px;
 }

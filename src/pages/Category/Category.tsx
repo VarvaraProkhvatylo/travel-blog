@@ -20,7 +20,7 @@ const Category = ({ category }: Props) => {
                                 image,
                                 title,
                                 date,
-                                like,
+                                // like,
                                 category,
                                 shortDescription,
                                 description,
@@ -39,7 +39,7 @@ const Category = ({ category }: Props) => {
                                         title={title}
                                         shortDescription={shortDescription}
                                         date={date}
-                                        like={like}
+                                        // like={like}
                                         category={category}
                                         description={description}
                                     />

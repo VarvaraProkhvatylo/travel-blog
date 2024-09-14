@@ -1,6 +1,10 @@
-import { Card, CardContent } from '@mui/material'
+import { Button, Card, CardContent } from '@mui/material'
 import './ArticleListItem.css'
 import { Link } from 'react-router-dom'
+import { useAppDispatch, useAppSelector } from '../../store/hooks'
+import { addLike, removeLike } from '../../store/likeSlice'
+import liked from '../../assets/like-enabled.png'
+import like from '../../assets/like-disabled.png'
 
 type Props = {
     id: number
@@ -8,7 +12,6 @@ type Props = {
     title: string
     description?: string
     date: string
-    like: string
     category: string
     shortDescription?: string
 }
@@ -21,8 +24,10 @@ const ArticleListItem = ({
     description,
     category,
     date,
-    like,
 }: Props) => {
+    const isLiked = useAppSelector((state) => state.articlesLikeState[id])
+    const dispatch = useAppDispatch()
+
     return (
         <>
             <Card className="card" sx={{ marginBottom: '25px' }}>
@@ -39,16 +44,38 @@ const ArticleListItem = ({
                     <div className="article-description">
                         {shortDescription} ...
                     </div>
-                    <div
-                        className="article-category"
-                        style={{
-                            backgroundColor: '#bbdefb',
-                        }}
-                    >
-                        {category}
+                    <div className="category-like">
+                        <div
+                            className="article-category"
+                            style={{
+                                backgroundColor: '#bbdefb',
+                            }}
+                        >
+                            {category}
+                        </div>
+                        <Button
+                            className="article-like"
+                            onClick={() => {
+                                isLiked
+                                    ? dispatch(removeLike(id))
+                                    : dispatch(addLike(id))
+                            }}
+                            style={{ width: '27px', height: '27px' }}
+                        >
+                            {isLiked ? (
+                                <img
+                                    src={liked}
+                                    style={{ width: '27px', height: '27px' }}
+                                />
+                            ) : (
+                                <img
+                                    src={like}
+                                    style={{ width: '27px', height: '27px' }}
+                                />
+                            )}
+                        </Button>
                     </div>
                     <div className="article-date">{date}</div>
-                    <div className="article-like">{like}</div>
                 </CardContent>
             </Card>
         </>
