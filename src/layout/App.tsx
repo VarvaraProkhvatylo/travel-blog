@@ -11,7 +11,7 @@ import LikedArticles from '../pages/LikedArticles.tsx/likedArticles'
 
 type Props = {}
 
-const App = () => {
+const App = (props: Props) => {
     return (
         <>
             <StyledEngineProvider injectFirst>

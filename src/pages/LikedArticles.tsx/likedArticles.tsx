@@ -1,7 +1,6 @@
 import { Container, Grid } from '@mui/material'
 import { articlesArray } from '../../utils/articlesArray'
 import ArticleListItem from '../../components/Articles/ArticleListItem'
-import { useSelector } from 'react-redux'
 
 type Props = {
     isLiked?: (id: number) => void
