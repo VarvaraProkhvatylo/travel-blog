@@ -7,6 +7,7 @@ import {
 import { Container, Grid } from '@mui/material'
 import parse from 'html-react-parser'
 import './ArticlePage.css'
+import Reviews from '../../components/Reviews/Reviews'
 
 type Props = {}
 
@@ -40,6 +41,9 @@ const ArticlePage = (props: Props) => {
                         {articlesObject[parseInt(id!)].title}
                     </div>
                     <div className="description">{parse(description)}</div>
+                </Container>
+                <Container className="reviews">
+                    <Reviews />
                 </Container>
             </Grid>
         </>
