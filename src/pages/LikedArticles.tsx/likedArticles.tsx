@@ -14,7 +14,7 @@ const LikedArticles = ({ isLiked }: Props) => {
             <Container>
                 <Container>
                     {articlesArray
-                        // .filter((article) => article.isLiked === true)
+                        .filter((article) => article.isLiked === true)
                         .map(
                             ({
                                 id,

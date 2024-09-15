@@ -7,7 +7,7 @@ type Props = {}
 const Logo = (props: Props) => {
     return (
         <>
-            <Link to="/">
+            <Link to="/" className="no-underline">
                 <Typography
                     className="logo-img"
                     variant="h6"
