@@ -1,19 +1,20 @@
 import { Container, Grid } from '@mui/material'
 import { articlesArray } from '../../utils/articlesArray'
 import ArticleListItem from '../../components/Articles/ArticleListItem'
-import './Category.css'
+import { useSelector } from 'react-redux'
 
 type Props = {
-    category: string
+    isLiked?: (id: number) => void
 }
 
-const Category = ({ category }: Props) => {
+const LikedArticles = ({ isLiked }: Props) => {
+    // const likedArticles = articlesArray.filter((article) => article.isLiked)
     return (
         <>
-            <Container className="category-page">
-                <Container className="category-container">
+            <Container>
+                <Container>
                     {articlesArray
-                        .filter((article) => article.category === category)
+                        // .filter((article) => article.isLiked === true)
                         .map(
                             ({
                                 id,
@@ -24,14 +25,7 @@ const Category = ({ category }: Props) => {
                                 shortDescription,
                                 description,
                             }) => (
-                                <Grid
-                                    item
-                                    xs={12}
-                                    sm={6}
-                                    lg={4}
-                                    key={id}
-                                    className="category-article"
-                                >
+                                <Grid item xs={12} sm={6} lg={4} key={id}>
                                     <ArticleListItem
                                         id={id}
                                         image={image}
@@ -50,4 +44,4 @@ const Category = ({ category }: Props) => {
     )
 }
 
-export default Category
+export default LikedArticles

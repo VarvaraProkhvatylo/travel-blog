@@ -26,6 +26,9 @@ const Menu = (props: Props) => {
                 <Button color="inherit" className="menu-item">
                     <MenuItem to="/contacts">Contacts</MenuItem>
                 </Button>
+                <Button color="inherit" className="menu-item">
+                    <MenuItem to="/liked-articles">Liked Articles</MenuItem>
+                </Button>
                 <Autocomplete
                     className="search"
                     multiple

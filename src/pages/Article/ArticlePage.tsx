@@ -40,7 +40,6 @@ const ArticlePage = (props: Props) => {
                         {articlesObject[parseInt(id!)].title}
                     </div>
                     <div className="description">{parse(description)}</div>
-                    <div></div>
                 </Container>
             </Grid>
         </>

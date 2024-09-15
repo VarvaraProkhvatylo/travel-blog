@@ -5,6 +5,7 @@ type Props = {
     children: React.ReactNode
     to: string
     category?: string
+    isLiked?: boolean
 }
 
 const MenuItem = ({ to, children }: Props) => {

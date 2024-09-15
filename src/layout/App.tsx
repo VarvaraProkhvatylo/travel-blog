@@ -7,10 +7,11 @@ import CssBaseline from '@mui/material/CssBaseline'
 import { Route, Routes } from 'react-router'
 import Category from '../pages/Category/Category'
 import ArticlePage from '../pages/Article/ArticlePage'
+import LikedArticles from '../pages/LikedArticles.tsx/likedArticles'
 
 type Props = {}
 
-const App = (props: Props) => {
+const App = () => {
     return (
         <>
             <StyledEngineProvider injectFirst>
@@ -32,6 +33,10 @@ const App = (props: Props) => {
                     ></Route>
                     <Route path="/contacts" element={<Contacts />}></Route>
                     <Route path="/:id" element={<ArticlePage />} />
+                    <Route
+                        path="/liked-articles"
+                        element={<LikedArticles />}
+                    ></Route>
                 </Routes>
                 <Footer />
             </StyledEngineProvider>

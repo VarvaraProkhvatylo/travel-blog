@@ -6,6 +6,7 @@ export type Article = {
     shortDescription: string
     description: string
     date: string
+    // isLiked?: boolean
 }
 
 export const articlesArray:Article[] = [

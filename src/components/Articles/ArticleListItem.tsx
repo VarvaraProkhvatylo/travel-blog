@@ -14,6 +14,7 @@ type Props = {
     date: string
     category: string
     shortDescription?: string
+    isLiked?: (id: number) => void
 }
 
 const ArticleListItem = ({
@@ -21,7 +22,6 @@ const ArticleListItem = ({
     image,
     title,
     shortDescription,
-    description,
     category,
     date,
 }: Props) => {
@@ -59,6 +59,7 @@ const ArticleListItem = ({
                                 isLiked
                                     ? dispatch(removeLike(id))
                                     : dispatch(addLike(id))
+                                console.log(isLiked)
                             }}
                             style={{ width: '27px', height: '27px' }}
                         >
