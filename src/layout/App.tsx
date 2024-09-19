@@ -49,7 +49,17 @@ const App = (props: Props) => {
                     <Route
                         path="/liked-articles"
                         element={
-                            <Container>
+                            <Container
+                                className="filtered"
+                                sx={{
+                                    maxWidth: '1200px',
+                                    display: 'flex',
+                                    flexWrap: 'wrap',
+                                    gap: '50px',
+                                    paddingTop: '50px',
+                                    paddingBottom: '50px',
+                                }}
+                            >
                                 {likedArticles.map(
                                     ({
                                         id,
