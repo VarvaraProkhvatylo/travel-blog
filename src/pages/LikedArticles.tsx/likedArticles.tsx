@@ -7,8 +7,6 @@ type Props = {
 }
 
 const LikedArticles = ({ isLiked }: Props) => {
-    console.log(isLiked)
-    // const likedArticles = articlesArray.filter((article) => article.isLiked)
     return (
         <>
             <Container>

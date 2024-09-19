@@ -2,9 +2,11 @@ import { Grid } from '@mui/material'
 import ArticleListItem from './ArticleListItem'
 import { articlesArray } from '../../utils/articlesArray'
 
-type Props = {}
+type Props = {
+    isLiked?: (id: number) => void
+}
 
-const ArticlesList = (props: Props) => {
+const ArticlesList = ({ isLiked }: Props) => {
     return (
         <>
             <Grid container>

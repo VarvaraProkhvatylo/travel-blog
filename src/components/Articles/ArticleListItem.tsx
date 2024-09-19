@@ -47,9 +47,9 @@ const ArticleListItem = ({
                     <div className="category-like">
                         <div
                             className="article-category"
-                            style={{
-                                backgroundColor: '#bbdefb',
-                            }}
+                            // style={{
+                            //     backgroundColor: '#bbdefb',
+                            // }}
                         >
                             {category}
                         </div>
@@ -59,9 +59,7 @@ const ArticleListItem = ({
                                 isLiked
                                     ? dispatch(removeLike(id))
                                     : dispatch(addLike(id))
-                                console.log(isLiked)
                             }}
-                            style={{ width: '27px', height: '27px' }}
                         >
                             {isLiked ? (
                                 <img
