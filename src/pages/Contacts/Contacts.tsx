@@ -105,7 +105,9 @@ const Contacts = (props: Props) => {
                                 Send me your questions, comments, or
                                 suggestions!
                             </p>
-                            <p className="paragraph">v.prokhvatylo@gmail.com</p>
+                            <p className="paragraph">
+                                varvara.prokhvatylo@gmail.com
+                            </p>
                             <p className="paragraph">
                                 If you'd like to work with me or you have a
                                 question or comment, you can contact me using
