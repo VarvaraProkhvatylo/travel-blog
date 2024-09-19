@@ -58,38 +58,53 @@ const App = (props: Props) => {
                                     gap: '50px',
                                     paddingTop: '50px',
                                     paddingBottom: '50px',
+                                    margin: '0 auto',
                                 }}
                             >
-                                {likedArticles.map(
-                                    ({
-                                        id,
-                                        image,
-                                        title,
-                                        date,
-                                        category,
-                                        shortDescription,
-                                        description,
-                                    }) => (
-                                        <Grid
-                                            item
-                                            xs={12}
-                                            sm={6}
-                                            lg={4}
-                                            key={id}
-                                        >
-                                            <ArticleListItem
-                                                id={id}
-                                                image={image}
-                                                title={title}
-                                                shortDescription={
-                                                    shortDescription
-                                                }
-                                                date={date}
-                                                category={category}
-                                                description={description}
-                                            />
-                                        </Grid>
+                                {likedArticles.length > 0 ? (
+                                    likedArticles.map(
+                                        ({
+                                            id,
+                                            image,
+                                            title,
+                                            date,
+                                            category,
+                                            shortDescription,
+                                            description,
+                                        }) => (
+                                            <Grid
+                                                item
+                                                xs={12}
+                                                sm={6}
+                                                lg={4}
+                                                key={id}
+                                            >
+                                                <ArticleListItem
+                                                    id={id}
+                                                    image={image}
+                                                    title={title}
+                                                    shortDescription={
+                                                        shortDescription
+                                                    }
+                                                    date={date}
+                                                    category={category}
+                                                    description={description}
+                                                />
+                                            </Grid>
+                                        )
                                     )
+                                ) : (
+                                    <p
+                                        style={{
+                                            width: '1200px',
+                                            fontFamily: '"Lato", sans-serif',
+                                            fontSize: '30px',
+                                            textAlign: 'center',
+                                        }}
+                                    >
+                                        {' '}
+                                        You have no liked articles
+                                    </p>
                                 )}
                             </Container>
                         }
