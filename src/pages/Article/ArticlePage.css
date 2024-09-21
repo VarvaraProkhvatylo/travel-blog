@@ -33,6 +33,7 @@
 
 .article-content .info .category {
     width: fit-content;
+    background-color: rgba(34, 133, 56, 0.542);
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10px;
